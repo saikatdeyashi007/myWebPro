@@ -1,193 +1,253 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Profile Page</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
+  <title>Profile Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+      width: 120px;
+      background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+      margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0
+      }
+    }
+  </style>
 </head>
+
 <body class="w3-black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="Images/mypic.jpg" alt="Saikat's Profile's Picture" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>CERTIFICATES</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT ME</p>
-  </a>
-</nav>
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="Images/mypic.jpg" alt="Saikat's Profile's Picture" style="width:100%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>CERTIFICATES</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT ME</p>
+    </a>
+  </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Saikat Deyashi.</h1>
-    <p>Photographer and Backend Engineer.</p>
-    <img src="Images/mypic.jpg" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">About Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p> Some text about me. I am a middle class bengali guy born in Howrah,West Bengal. I am engineer by profession, photographer by passion, gammer by hobby.
-      Videography is my intrest. Travelling is love for me.
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Photography</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
     </div>
-    <p class="w3-wide">Videography</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
-    </div>
-    <p class="w3-wide">Backend Engineering</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
-
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">2</span><br>
-        Companies Worked
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">5</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">100+</span><br>
-        Photography
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">10+</span><br>
-        Videography
-      </div>
-    </div>
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Education, Trainings and Learnings</h3>
-
-    <img src="Images/techno.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">B.Tech, MSIT</span> 2016-20</p>
-    <p>Specilization in Electronics and Communication with DGPA 8.36</p><br>
-
-    <img src="Images/Scaler.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Scaler Academy</span> 2022 to Till Date</p>
-    <p>Full time learner for Software Developer. In top 5% of learners in Scaler Academy with PSP greater than 90%</p><br>
-
-    <img src="Images/Stackroute.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Mainframe By StackRoute</span> 2020 Sep-Nov</p>
-    <p>Training done under CGI Graduate Transformation Program, two months of regular classroom by expert instructor.</p><br>
-
-    <img src="Images/NIIT.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">JAVA by NIIT</span> 2016-17</p>
-    <p>Winter Inductrial Training by NIIT on JAVA</p>
-  <!-- End About Section -->
   </div>
 
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Certificates</h2>
-    <hr style="width:220px" class="w3-opacity">
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Saikat Deyashi</h1>
+      <p>Mainframe Developer and Production Support Engineer</p>
+      <img src="Images/mypic.jpg" alt="boy" class="w3-image" width="992" height="1108">
+    </header>
 
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="Images/SIH.png" style="width:100%">
-        <img src="Images/Java.png" style="width:100%">
-        <img src="Images/Mainframe.png" style="width:100%">
-      </div>
-
-      <div class="w3-half">
-        <img src="Images/WebDev.png" style="width:100%">
-        <img src="Images/Webel.png" style="width:100%">
-      </div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Howrah, West Bengal</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 9433360600</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: saikatdeyashi@gmail.com</p>
-    </div><br>
-    <p>Let's get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h2 class="w3-text-light-grey">About Me</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p> I am a middle class bengali guy born in Howrah,West Bengal. I am engineer by profession, photographer by passion, gammer by hobby.
+        Videography is my intrest. Travelling is love for me.
       </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>
+      <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+      <p class="w3-wide">Mainframe</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+      </div>
+      <p class="w3-wide">DSA</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+      </div>
+      <p class="w3-wide">SQL</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+      </div><br>
+      <p class="w3-wide">LLD</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+      </div><br>
+      <p class="w3-wide">Java Backend SpringBoot</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:65%"></div>
+      </div><br>
+
+      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">2</span><br>
+          Companies Worked
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">10+</span><br>
+          Projects Done
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">500+</span><br>
+          Incident Resolved
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">20+</span><br>
+          Major Incident Avoided
+        </div>
+      </div>
+
+      <button class="w3-button w3-light-grey w3-padding-large w3-section">
+        <i class="fa fa-download"></i> Download Resume
+      </button>
+
+      <!-- Testimonials -->
+      <center>
+        <h2 class="w3-padding-24 w3-text-light-grey">WORK EXPERIENCE</h2>
+      </center>
+
+      <img src="Images/CGI.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">Software Engineer at CGI</span> 2020-23</p>
+      <p>Project : Bell Canada Production Support and Enhancement</p><br>
+      <ul>
+        <li>Successfully executed 50+ COBOL and 35+ JCL programming including DB2, VSAM, FLATFILE processing, following industry coding standards.</li>
+        <li>Supports a total of 35+ Applications in Mainframe, Unix/Tuxedo. Implemented Sanity Automation. Successfully resolved 550+ incidents till date in production including High Medium
+          and Low. Implemented Automation for incident resolution.</li>
+      </ul>
+      
+      <br>
+
+      <img src="Images/TCS.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">System Engineer at TCS</span> 2023 to till date</p>
+      <p>Project : CITI Bank Mexico Production Support</p><br>
+      <ul>
+        <li>Successfully implemented CITI Premia Card automations only using JCL.</li>
+        <li>Submitted multiple PI to client for improvement in process. Pi Certified by TCS.</li>
+        <li>Achieved Best Team award by doing teamwork management. Supports a total of 10+ Applications in Mainframe Vision Plus Module.</li>
+      </ul>
+
+
+
+      <h3 class="w3-padding-24 w3-text-light-grey">My Education, Trainings and Learnings</h3>
+
+      <img src="Images/techno.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">B.Tech, MSIT</span> 2016-20</p>
+      <p>Specilization in Electronics and Communication with DGPA 8.36</p><br>
+
+      <img src="Images/Scaler.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">Scaler Academy</span> 2022 to till date</p>
+      <p>Full time learner for Software Developer. In top 5% of learners in Scaler Academy with PSP greater than 90%</p><br>
+
+      <img src="Images/Stackroute.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">Mainframe By StackRoute</span> 2020 Sep-Nov</p>
+      <p>Training done under CGI Graduate Transformation Program, two months of regular classroom by expert instructor.</p><br>
+
+      <img src="Images/NIIT.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">JAVA by NIIT</span> 2016-17</p>
+      <p>Winter Inductrial Training by NIIT on JAVA</p>
+      <!-- End About Section -->
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="w3-padding-64 w3-content" id="photos">
+      <h2 class="w3-text-light-grey">My Certificates</h2>
+      <hr style="width:220px" class="w3-opacity">
+
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <img src="Images/SIH.png" style="width:100%">
+          <img src="Images/Java.png" style="width:100%">
+          <img src="Images/Mainframe.png" style="width:100%">
+        </div>
+
+        <div class="w3-half">
+          <img src="Images/WebDev.png" style="width:100%">
+          <img src="Images/Webel.png" style="width:100%">
+        </div>
+        <!-- End photo grid -->
+      </div>
+      <!-- End Portfolio Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+      <h2 class="w3-text-light-grey">Contact Me</h2>
+      <hr style="width:200px" class="w3-opacity">
+
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Howrah, West Bengal</p>
+        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 9433360600</p>
+        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: saikatdeyashi@gmail.com</p>
+      </div><br>
+      <p>Let's get in touch. Send me a message:</p>
+
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+      <!-- End Contact Section -->
+    </div>
 
     <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">©Copyright : W3 Schools</a></p>
-  <!-- End footer -->
-  </footer>
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">©Copyright : W3 Schools</a></p>
+      <!-- End footer -->
+    </footer>
 
-<!-- END PAGE CONTENT -->
-</div>
+    <!-- END PAGE CONTENT -->
+  </div>
 
 </body>
+
 </html>
